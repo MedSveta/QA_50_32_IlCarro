@@ -66,7 +66,7 @@ public class RegistrationPage extends BasePage {
         System.out.println(x + " x " + y);
 
         Actions actions = new Actions(driver);
-        actions.moveToElement(checkBoxAgree, -x/2, -y/2 ).click().perform();
+        actions.moveToElement(checkBoxAgree, -x/10*9, -y/10*9).click().perform();
     }
 
 }
