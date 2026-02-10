@@ -35,6 +35,7 @@ public class RegistrationPage extends BasePage {
         fieldLastName.sendKeys(user.getLastName());
         fieldEmail.sendKeys(user.getEmail());
         fieldPassword.sendKeys(user.getPassword());
+        pause(1);
     }
 
     public void clickBtnYalla(){
@@ -66,7 +67,7 @@ public class RegistrationPage extends BasePage {
         System.out.println(x + " x " + y);
 
         Actions actions = new Actions(driver);
-        actions.moveToElement(checkBoxAgree, -x/10*9, -y/10*9).click().perform();
+        actions.moveToElement(checkBoxAgree, -(x/10*4), -y/2).click().perform();
     }
 
 }

@@ -88,8 +88,8 @@ public class RegistrationTests extends ApplicationManager {
                 .email("")
                 .password("")
                 .build();
+        registrationPage.clickCheckBoxWithActions();
         registrationPage.typeRegistrationForm(user);
-        registrationPage.setCheckBoxAgreeTermsOfUse();
         registrationPage.clickBtnYalla();
         softAssert.assertTrue(registrationPage
                 .isTextInErrorPresent("Name is required"),
